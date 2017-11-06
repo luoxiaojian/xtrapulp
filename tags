@@ -1,0 +1,252 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BAL_CHANGE	pulp_v.cpp	/^#define BAL_CHANGE /;"	d	file:
+BAL_CHANGE	pulp_ve.cpp	/^#define BAL_CHANGE /;"	d	file:
+BAL_CHANGE	pulp_vec.cpp	/^#define BAL_CHANGE /;"	d	file:
+BAL_CUTOFF	pulp_v.cpp	/^#define BAL_CUTOFF /;"	d	file:
+BAL_CUTOFF	pulp_ve.cpp	/^#define BAL_CUTOFF /;"	d	file:
+BAL_CUTOFF	pulp_vec.cpp	/^#define BAL_CUTOFF /;"	d	file:
+CUT_CHANGE	pulp_v.cpp	/^#define CUT_CHANGE /;"	d	file:
+CUT_CHANGE	pulp_ve.cpp	/^#define CUT_CHANGE /;"	d	file:
+CUT_CHANGE	pulp_vec.cpp	/^#define CUT_CHANGE /;"	d	file:
+CXXFLAGS	Makefile	/^CXXFLAGS = -fopenmp -O3 -Wall$/;"	m
+FORLIBPULP	Makefile	/^FORLIBPULP = util.o generate.o pulp_util.o pulp_data.o fast_map.o dist_graph.o comms.o io_pp.o pulp_init.o pulp_vec.o pulp_ve.o pulp_v.o xtrapulp.o$/;"	m
+LIBTARGET	Makefile	/^LIBTARGET = libxtrapulp.a$/;"	m
+LINKFLAGS	Makefile	/^LINKFLAGS = -fopenmp -O3 -Wall$/;"	m
+MAX_SEND_SIZE	comms.h	/^#define MAX_SEND_SIZE /;"	d
+MIN_SIZE	pulp_init.cpp	/^#define MIN_SIZE /;"	d	file:
+MPICXX	Makefile	/^MPICXX = mpicxx$/;"	m
+NULL_KEY	fast_map.h	/^#define NULL_KEY /;"	d
+TARGET	Makefile	/^TARGET = xtrapulp$/;"	m
+THREAD_QUEUE_SIZE	comms.h	/^#define THREAD_QUEUE_SIZE /;"	d
+TOCOMPILE	Makefile	/^TOCOMPILE = util.o generate.o pulp_util.o pulp_data.o fast_map.o dist_graph.o comms.o io_pp.o main.o$/;"	m
+X	xtrapulp.cpp	/^float X, Y;$/;"	v
+Y	xtrapulp.cpp	/^float X, Y;$/;"	v
+_COMMS_H_	comms.h	/^#define _COMMS_H_$/;"	d
+_DIST_GRAPH_H_	dist_graph.h	/^#define _DIST_GRAPH_H_$/;"	d
+_FAST_MAP_H_	fast_map.h	/^#define _FAST_MAP_H_$/;"	d
+_GENERATE_H_	generate.h	/^#define _GENERATE_H_$/;"	d
+_IO_PP_H_	io_pp.h	/^#define _IO_PP_H_$/;"	d
+_PULP_DATA_H	pulp_data.h	/^#define _PULP_DATA_H$/;"	d
+_PULP_INIT_H_	pulp_init.h	/^#define _PULP_INIT_H_$/;"	d
+_PULP_UTIL_H_	pulp_util.h	/^#define _PULP_UTIL_H_$/;"	d
+_PULP_VEC_H_	pulp_vec.h	/^#define _PULP_VEC_H_$/;"	d
+_PULP_VE_H_	pulp_ve.h	/^#define _PULP_VE_H_$/;"	d
+_PULP_V_H_	pulp_v.h	/^#define _PULP_V_H_$/;"	d
+_UTIL_H_	util.h	/^#define _UTIL_H_$/;"	d
+__XTRAPULP_H__	xtrapulp.h	/^#define __XTRAPULP_H__$/;"	d
+add_vid_data_to_send	comms.h	/^inline void add_vid_data_to_send(thread_comm_t* tc, mpi_data_t* comm,$/;"	f
+add_vid_to_queue	comms.h	/^inline void add_vid_to_queue(thread_queue_t* tq, queue_data_t* q,$/;"	f
+add_vid_to_send	comms.h	/^inline void add_vid_to_send(thread_queue_t* tq, queue_data_t* q,$/;"	f
+arr	fast_map.h	/^  uint64_t* arr;$/;"	m	struct:fast_map
+avg_cut_size	pulp_data.h	/^  double avg_cut_size;$/;"	m	struct:pulp_data_t
+avg_edge_size	pulp_data.h	/^  double avg_edge_size;$/;"	m	struct:pulp_data_t
+avg_size	pulp_data.h	/^  double avg_size;$/;"	m	struct:pulp_data_t
+capacity	fast_map.h	/^  uint64_t capacity;$/;"	m	struct:fast_map
+clear_comm_data	comms.cpp	/^void clear_comm_data(mpi_data_t* comm) {$/;"	f
+clear_graph	dist_graph.cpp	/^int clear_graph(dist_graph_t* g) {$/;"	f
+clear_map	fast_map.cpp	/^void clear_map(fast_map* map) {$/;"	f
+clear_pulp_data	pulp_data.cpp	/^void clear_pulp_data(pulp_data_t* pulp) {$/;"	f
+clear_queue_data	comms.cpp	/^void clear_queue_data(queue_data_t* q) {$/;"	f
+clear_recvbuf_vid_data	comms.cpp	/^void clear_recvbuf_vid_data(mpi_data_t* comm) {$/;"	f
+clear_thread_comm	comms.cpp	/^void clear_thread_comm(thread_comm_t* tc) {$/;"	f
+clear_thread_pulp	pulp_data.cpp	/^void clear_thread_pulp(thread_pulp_t* tp) {$/;"	f
+clear_thread_queue	comms.cpp	/^void clear_thread_queue(thread_queue_t* tq) {$/;"	f
+clear_thread_queue_comm_data	comms.cpp	/^void clear_thread_queue_comm_data(mpi_data_t* comm) {$/;"	f
+create_graph	dist_graph.cpp	/^int create_graph(dist_graph_t* g, uint64_t n_global, uint64_t m_global,$/;"	f
+create_graph	dist_graph.cpp	/^int create_graph(graph_gen_data_t* ggi, dist_graph_t* g) {$/;"	f
+create_graph_serial	dist_graph.cpp	/^int create_graph_serial(dist_graph_t* g, uint64_t n_global, uint64_t m_global,$/;"	f
+create_graph_serial	dist_graph.cpp	/^int create_graph_serial(graph_gen_data_t* ggi, dist_graph_t* g) {$/;"	f
+create_xtrapulp_dist_graph	xtrapulp.cpp	/^extern "C" int create_xtrapulp_dist_graph($/;"	f
+cut_size	pulp_data.h	/^  int64_t cut_size;$/;"	m	struct:pulp_data_t
+cut_size_change	pulp_data.h	/^  int64_t cut_size_change;$/;"	m	struct:pulp_data_t
+debug	xtrapulp.cpp	/^bool verbose, debug, verify;$/;"	v
+dist_graph_t	xtrapulp.h	/^struct dist_graph_t {$/;"	s
+do_bfs_init	xtrapulp.h	/^  bool do_bfs_init;$/;"	m	struct:__anon1
+do_edge_balance	xtrapulp.h	/^  bool do_edge_balance;$/;"	m	struct:__anon1
+do_lp_init	xtrapulp.h	/^  bool do_lp_init;$/;"	m	struct:__anon1
+do_maxcut_balance	xtrapulp.h	/^  bool do_maxcut_balance;$/;"	m	struct:__anon1
+do_repart	xtrapulp.h	/^  bool do_repart;$/;"	m	struct:__anon1
+edge_balance	xtrapulp.h	/^  double edge_balance;$/;"	m	struct:__anon1
+edge_weights	xtrapulp.h	/^  int32_t* edge_weights;$/;"	m	struct:dist_graph_t
+empty_map	fast_map.cpp	/^void empty_map(fast_map* map) {$/;"	f
+empty_queue	comms.h	/^inline void empty_queue(thread_queue_t* tq, queue_data_t* q) {$/;"	f
+empty_send	comms.h	/^inline void empty_send(thread_queue_t* tq, queue_data_t* q) {$/;"	f
+empty_vid_data	comms.h	/^inline void empty_vid_data(thread_comm_t* tc, mpi_data_t* comm) {$/;"	f
+exchange_edges	io_pp.cpp	/^int exchange_edges(graph_gen_data_t* ggi, mpi_data_t* comm) {$/;"	f
+exchange_vert_data	comms.h	/^inline void exchange_vert_data(dist_graph_t* g, mpi_data_t* comm,$/;"	f
+exchange_verts	comms.h	/^inline void exchange_verts(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q) {$/;"	f
+fast_map	fast_map.h	/^struct fast_map {$/;"	s
+gen_edges	dist_graph.h	/^  uint64_t* gen_edges;$/;"	m	struct:graph_gen_data_t
+generate_hd_out_edges	generate.cpp	/^int generate_hd_out_edges(graph_gen_data_t* ggi, uint64_t num_verts,$/;"	f
+generate_rand_out_edges	generate.cpp	/^int generate_rand_out_edges(graph_gen_data_t* ggi, uint64_t num_verts,$/;"	f
+generate_rmat_out_edges	generate.cpp	/^int generate_rmat_out_edges(graph_gen_data_t* ggi, uint64_t num_verts,$/;"	f
+get_ghost_degrees	dist_graph.cpp	/^int get_ghost_degrees(dist_graph_t* g) {$/;"	f
+get_ghost_degrees	dist_graph.cpp	/^int get_ghost_degrees(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q) {$/;"	f
+get_ghost_tasks	repart.cpp	/^int get_ghost_tasks(dist_graph_t* g) {$/;"	f
+get_max_degree_vert	dist_graph.cpp	/^int get_max_degree_vert(dist_graph_t* g) {$/;"	f
+get_max_key	fast_map.h	/^inline uint64_t get_max_key(fast_map* map) {$/;"	f
+get_value	fast_map.h	/^inline uint64_t get_value(fast_map* map, uint64_t key) {$/;"	f
+ghost_degrees	xtrapulp.h	/^  uint64_t* ghost_degrees;$/;"	m	struct:dist_graph_t
+ghost_tasks	xtrapulp.h	/^  uint64_t* ghost_tasks;$/;"	m	struct:dist_graph_t
+ghost_unmap	xtrapulp.h	/^  uint64_t* ghost_unmap;$/;"	m	struct:dist_graph_t
+global_queue_size	comms.h	/^  uint64_t global_queue_size;$/;"	m	struct:mpi_data_t
+graph_gen_data_t	dist_graph.h	/^struct graph_gen_data_t {$/;"	s
+hashing	fast_map.h	/^  bool hashing;$/;"	m	struct:fast_map
+highest_less_than	dist_graph.h	/^inline int32_t highest_less_than(uint64_t* prefix_sums, uint64_t val) {$/;"	f
+init_comm_data	comms.cpp	/^void init_comm_data(mpi_data_t* comm) {$/;"	f
+init_map	fast_map.cpp	/^void init_map(fast_map* map, uint64_t init_size) {$/;"	f
+init_map_nohash	fast_map.cpp	/^void init_map_nohash(fast_map* map, uint64_t init_size) {$/;"	f
+init_pulp_data	pulp_data.cpp	/^void init_pulp_data(dist_graph_t* g, pulp_data_t* pulp, int32_t num_parts) {$/;"	f
+init_queue_data	comms.cpp	/^void init_queue_data(dist_graph_t* g, queue_data_t* q) {$/;"	f
+init_sendbuf_vid_data	comms.cpp	/^void init_sendbuf_vid_data(mpi_data_t* comm) {$/;"	f
+init_thread_comm	comms.cpp	/^void init_thread_comm(thread_comm_t* tc) {$/;"	f
+init_thread_pulp	pulp_data.cpp	/^void init_thread_pulp(thread_pulp_t* tp, pulp_data_t* pulp) {$/;"	f
+init_thread_queue	comms.cpp	/^void init_thread_queue(thread_queue_t* tq) {$/;"	f
+load_graph_edges_32	io_pp.cpp	/^int load_graph_edges_32(char* input_filename, graph_gen_data_t* ggi,$/;"	f
+load_graph_edges_64	io_pp.cpp	/^int load_graph_edges_64(char* input_filename, graph_gen_data_t* ggi,$/;"	f
+local_parts	pulp_data.h	/^  int32_t* local_parts;$/;"	m	struct:pulp_data_t
+local_unmap	xtrapulp.h	/^  uint64_t* local_unmap;$/;"	m	struct:dist_graph_t
+m	dist_graph.h	/^  uint64_t m;$/;"	m	struct:graph_gen_data_t
+m	xtrapulp.h	/^  uint64_t m;$/;"	m	struct:dist_graph_t
+m_local	xtrapulp.h	/^  uint64_t m_local;$/;"	m	struct:dist_graph_t
+m_local_edges	dist_graph.h	/^  uint64_t m_local_edges;$/;"	m	struct:graph_gen_data_t
+m_local_read	dist_graph.h	/^  uint64_t m_local_read;$/;"	m	struct:graph_gen_data_t
+main	main.cpp	/^int main(int argc, char** argv) {$/;"	f
+map	xtrapulp.h	/^  fast_map* map;$/;"	m	struct:dist_graph_t
+max_c	pulp_data.h	/^  double max_c;$/;"	m	struct:pulp_data_t
+max_cut	pulp_data.h	/^  int64_t max_cut;$/;"	m	struct:pulp_data_t
+max_degree	xtrapulp.h	/^  uint64_t max_degree;$/;"	m	struct:dist_graph_t
+max_degree_vert	xtrapulp.h	/^  uint64_t max_degree_vert;$/;"	m	struct:dist_graph_t
+max_e	pulp_data.h	/^  double max_e;$/;"	m	struct:pulp_data_t
+max_v	pulp_data.h	/^  double max_v;$/;"	m	struct:pulp_data_t
+mpi_data_t	comms.h	/^struct mpi_data_t {$/;"	s
+mult_hash	fast_map.h	/^inline uint64_t mult_hash(fast_map* map, uint64_t key) {$/;"	f
+n	dist_graph.h	/^  uint64_t n;$/;"	m	struct:graph_gen_data_t
+n	xtrapulp.h	/^  uint64_t n;$/;"	m	struct:dist_graph_t
+n_ghost	xtrapulp.h	/^  uint64_t n_ghost;$/;"	m	struct:dist_graph_t
+n_local	dist_graph.h	/^  uint64_t n_local;$/;"	m	struct:graph_gen_data_t
+n_local	xtrapulp.h	/^  uint64_t n_local;$/;"	m	struct:dist_graph_t
+n_offset	dist_graph.h	/^  uint64_t n_offset;$/;"	m	struct:graph_gen_data_t
+n_offset	xtrapulp.h	/^  uint64_t n_offset;$/;"	m	struct:dist_graph_t
+n_total	xtrapulp.h	/^  uint64_t n_total;$/;"	m	struct:dist_graph_t
+next_size	comms.h	/^  uint64_t next_size;$/;"	m	struct:queue_data_t
+nprocs	xtrapulp.cpp	/^int procid, nprocs;$/;"	v
+num_parts	pulp_data.h	/^  int32_t num_parts;$/;"	m	struct:pulp_data_t
+num_unique	fast_map.h	/^  uint64_t num_unique;$/;"	m	struct:fast_map
+out_degree	xtrapulp.h	/^#define out_degree(/;"	d
+out_degree_list	xtrapulp.h	/^  uint64_t* out_degree_list;$/;"	m	struct:dist_graph_t
+out_edges	xtrapulp.h	/^  uint64_t* out_edges;$/;"	m	struct:dist_graph_t
+out_vertices	xtrapulp.h	/^#define out_vertices(/;"	d
+out_weights	xtrapulp.h	/^#define out_weights(/;"	d
+output_parts	pulp_util.cpp	/^int output_parts(const char* filename, dist_graph_t* g, int32_t* parts) {$/;"	f
+output_parts	pulp_util.cpp	/^int output_parts(const char* filename, dist_graph_t* g, int32_t* parts,$/;"	f
+p	util.h	/^  int64_t p;$/;"	m	struct:xs1024star_t
+part_counts	pulp_data.h	/^  double* part_counts;$/;"	m	struct:thread_pulp_t
+part_cut_size_changes	pulp_data.h	/^  int64_t* part_cut_size_changes;$/;"	m	struct:pulp_data_t
+part_cut_sizes	pulp_data.h	/^  int64_t* part_cut_sizes;$/;"	m	struct:pulp_data_t
+part_cut_weights	pulp_data.h	/^  double* part_cut_weights;$/;"	m	struct:thread_pulp_t
+part_edge_size_changes	pulp_data.h	/^  int64_t* part_edge_size_changes;$/;"	m	struct:pulp_data_t
+part_edge_sizes	pulp_data.h	/^  int64_t* part_edge_sizes;$/;"	m	struct:pulp_data_t
+part_edge_weights	pulp_data.h	/^  double* part_edge_weights;$/;"	m	struct:thread_pulp_t
+part_eval	pulp_util.cpp	/^int part_eval(dist_graph_t* g, int32_t* parts, int32_t num_parts) {$/;"	f
+part_eval	pulp_util.cpp	/^int part_eval(dist_graph_t* g, pulp_data_t* pulp) {$/;"	f
+part_eval_weighted	pulp_util.cpp	/^int part_eval_weighted(dist_graph_t* g, pulp_data_t* pulp) {$/;"	f
+part_size_changes	pulp_data.h	/^  int64_t* part_size_changes;$/;"	m	struct:pulp_data_t
+part_sizes	pulp_data.h	/^  int64_t* part_sizes;$/;"	m	struct:pulp_data_t
+part_weights	pulp_data.h	/^  double* part_weights;$/;"	m	struct:thread_pulp_t
+print_usage	main.cpp	/^void print_usage(char** argv) {$/;"	f
+print_usage_full	main.cpp	/^void print_usage_full(char** argv) {$/;"	f
+procid	xtrapulp.cpp	/^int procid, nprocs;$/;"	v
+pulp_data_t	pulp_data.h	/^struct pulp_data_t {$/;"	s
+pulp_init_bfs_max	pulp_init.cpp	/^void pulp_init_bfs_max(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q,$/;"	f
+pulp_init_bfs_pull	pulp_init.cpp	/^void pulp_init_bfs_pull(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q,$/;"	f
+pulp_init_block	pulp_init.cpp	/^void pulp_init_block(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q,$/;"	f
+pulp_init_label_prop	pulp_init.cpp	/^void pulp_init_label_prop(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q,$/;"	f
+pulp_init_label_prop_weighted	pulp_init.cpp	/^void pulp_init_label_prop_weighted(dist_graph_t* g, mpi_data_t* comm,$/;"	f
+pulp_init_rand	pulp_init.cpp	/^void pulp_init_rand(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q,$/;"	f
+pulp_part_control_t	xtrapulp.h	/^} pulp_part_control_t;$/;"	t	typeref:struct:__anon1
+pulp_seed	xtrapulp.h	/^  int pulp_seed;$/;"	m	struct:__anon1
+pulp_v	pulp_v.cpp	/^int pulp_v(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q,$/;"	f
+pulp_v_weighted	pulp_v.cpp	/^int pulp_v_weighted(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q,$/;"	f
+pulp_ve	pulp_ve.cpp	/^int pulp_ve(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q,$/;"	f
+pulp_ve_weighted	pulp_ve.cpp	/^int pulp_ve_weighted(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q,$/;"	f
+pulp_vec	pulp_vec.cpp	/^int pulp_vec(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q,$/;"	f
+pulp_vec_weighted	pulp_vec.cpp	/^int pulp_vec_weighted(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q,$/;"	f
+queue	comms.h	/^  uint64_t* queue;$/;"	m	struct:queue_data_t
+queue_data_t	comms.h	/^struct queue_data_t {$/;"	s
+queue_next	comms.h	/^  uint64_t* queue_next;$/;"	m	struct:queue_data_t
+queue_send	comms.h	/^  uint64_t* queue_send;$/;"	m	struct:queue_data_t
+queue_size	comms.h	/^  uint64_t queue_size;$/;"	m	struct:queue_data_t
+quicksort_dec	util.cpp	/^void quicksort_dec(double* arr1, uint64_t* arr2, int64_t left, int64_t right) {$/;"	f
+quicksort_inc	util.cpp	/^void quicksort_inc(uint64_t* arr1, int64_t left, int64_t right) {$/;"	f
+rdispls	comms.h	/^  int32_t* rdispls;$/;"	m	struct:mpi_data_t
+read_parts	pulp_util.cpp	/^int read_parts(const char* filename, dist_graph_t* g, pulp_data_t* pulp,$/;"	f
+recvbuf_data	comms.h	/^  int32_t* recvbuf_data;$/;"	m	struct:mpi_data_t
+recvbuf_vert	comms.h	/^  uint64_t* recvbuf_vert;$/;"	m	struct:mpi_data_t
+recvcounts	comms.h	/^  int32_t* recvcounts;$/;"	m	struct:mpi_data_t
+recvcounts_temp	comms.h	/^  uint64_t* recvcounts_temp;$/;"	m	struct:mpi_data_t
+relabel_edges	dist_graph.cpp	/^int relabel_edges(dist_graph_t* g) {$/;"	f
+relabel_edges	dist_graph.cpp	/^int relabel_edges(dist_graph_t* g, uint64_t* vert_dist) {$/;"	f
+repart	repart.cpp	/^int repart(dist_graph_t* g, int32_t* local_parts) {$/;"	f
+running_max_c	pulp_data.h	/^  double running_max_c;$/;"	m	struct:pulp_data_t
+running_max_e	pulp_data.h	/^  double running_max_e;$/;"	m	struct:pulp_data_t
+running_max_v	pulp_data.h	/^  double running_max_v;$/;"	m	struct:pulp_data_t
+s	util.h	/^  uint64_t s[16];$/;"	m	struct:xs1024star_t
+sdispls	comms.h	/^  int32_t* sdispls;$/;"	m	struct:mpi_data_t
+sdispls_cpy	comms.h	/^  int32_t* sdispls_cpy;$/;"	m	struct:mpi_data_t
+sdispls_temp	comms.h	/^  uint64_t* sdispls_temp;$/;"	m	struct:mpi_data_t
+seed	xtrapulp.cpp	/^int seed;$/;"	v
+send_size	comms.h	/^  uint64_t send_size;$/;"	m	struct:queue_data_t
+sendbuf_data	comms.h	/^  int32_t* sendbuf_data;$/;"	m	struct:mpi_data_t
+sendbuf_data_thread	comms.h	/^  int32_t* sendbuf_data_thread;$/;"	m	struct:thread_comm_t
+sendbuf_rank_thread	comms.h	/^  int32_t* sendbuf_rank_thread;$/;"	m	struct:thread_comm_t
+sendbuf_vert	comms.h	/^  uint64_t* sendbuf_vert;$/;"	m	struct:mpi_data_t
+sendbuf_vert_thread	comms.h	/^  uint64_t* sendbuf_vert_thread;$/;"	m	struct:thread_comm_t
+sendcounts	comms.h	/^  int32_t* sendcounts;$/;"	m	struct:mpi_data_t
+sendcounts_temp	comms.h	/^  uint64_t* sendcounts_temp;$/;"	m	struct:mpi_data_t
+sendcounts_thread	comms.h	/^  uint64_t* sendcounts_thread;$/;"	m	struct:thread_comm_t
+set_value	fast_map.h	/^inline void set_value(fast_map* map, uint64_t key, uint64_t value) {$/;"	f
+set_value_uq	fast_map.h	/^inline void set_value_uq(fast_map* map, uint64_t key, uint64_t value) {$/;"	f
+thread_comm_t	comms.h	/^struct thread_comm_t {$/;"	s
+thread_pulp_t	pulp_data.h	/^struct thread_pulp_t {$/;"	s
+thread_queue	comms.h	/^  uint64_t* thread_queue;$/;"	m	struct:thread_queue_t
+thread_queue_size	comms.h	/^  uint64_t thread_queue_size;$/;"	m	struct:thread_comm_t
+thread_queue_size	comms.h	/^  uint64_t thread_queue_size;$/;"	m	struct:thread_queue_t
+thread_queue_t	comms.h	/^struct thread_queue_t {$/;"	s
+thread_send	comms.h	/^  uint64_t* thread_send;$/;"	m	struct:thread_queue_t
+thread_send_size	comms.h	/^  uint64_t thread_send_size;$/;"	m	struct:thread_queue_t
+thread_starts	comms.h	/^  uint64_t* thread_starts;$/;"	m	struct:thread_comm_t
+throw_err	util.cpp	/^void throw_err(char const* err_message) {$/;"	f
+throw_err	util.cpp	/^void throw_err(char const* err_message, int32_t task) {$/;"	f
+throw_err	util.cpp	/^void throw_err(char const* err_message, int32_t task, int32_t thread) {$/;"	f
+tid	comms.h	/^  int32_t tid;$/;"	m	struct:thread_comm_t
+tid	comms.h	/^  int32_t tid;$/;"	m	struct:thread_queue_t
+timer	util.cpp	/^double timer() {$/;"	f
+total_recv	comms.h	/^  uint64_t total_recv;$/;"	m	struct:mpi_data_t
+total_send	comms.h	/^  uint64_t total_send;$/;"	m	struct:mpi_data_t
+unique_indexes	fast_map.h	/^  uint64_t* unique_indexes;$/;"	m	struct:fast_map
+unique_keys	fast_map.h	/^  uint64_t* unique_keys;$/;"	m	struct:fast_map
+update_pulp_data	pulp_data.cpp	/^void update_pulp_data(dist_graph_t* g, pulp_data_t* pulp) {$/;"	f
+update_pulp_data_weighted	pulp_data.cpp	/^void update_pulp_data_weighted(dist_graph_t* g, pulp_data_t* pulp) {$/;"	f
+update_sendcounts_thread	comms.h	/^inline void update_sendcounts_thread(dist_graph_t* g, thread_comm_t* tc,$/;"	f
+update_vid_data_queues	comms.h	/^inline void update_vid_data_queues(dist_graph_t* g, thread_comm_t* tc,$/;"	f
+v_to_rank	comms.h	/^  bool* v_to_rank;$/;"	m	struct:thread_comm_t
+verbose	xtrapulp.cpp	/^bool verbose, debug, verify;$/;"	v
+verbose_output	xtrapulp.h	/^  bool verbose_output;$/;"	m	struct:__anon1
+verify	xtrapulp.cpp	/^bool verbose, debug, verify;$/;"	v
+vert_balance	xtrapulp.h	/^  double vert_balance;$/;"	m	struct:__anon1
+vertex_weights	xtrapulp.h	/^  int32_t* vertex_weights;$/;"	m	struct:dist_graph_t
+vertex_weights_sum	xtrapulp.h	/^  uint64_t vertex_weights_sum;$/;"	m	struct:dist_graph_t
+weight_exponent_c	pulp_data.h	/^  double weight_exponent_c;$/;"	m	struct:pulp_data_t
+weight_exponent_e	pulp_data.h	/^  double weight_exponent_e;$/;"	m	struct:pulp_data_t
+xs1024star_next	util.cpp	/^uint64_t xs1024star_next(xs1024star_t* xs) {$/;"	f
+xs1024star_next_real	util.cpp	/^double xs1024star_next_real(xs1024star_t* xs) {$/;"	f
+xs1024star_seed	util.cpp	/^void xs1024star_seed(uint64_t seed, xs1024star_t* xs) {$/;"	f
+xs1024star_t	util.h	/^struct xs1024star_t {$/;"	s
+xtrapulp	xtrapulp.cpp	/^extern "C" int xtrapulp(dist_graph_t* g, pulp_part_control_t* ppc,$/;"	f
+xtrapulp_run	xtrapulp.cpp	/^extern "C" int xtrapulp_run(dist_graph_t* g, pulp_part_control_t* ppc,$/;"	f
