@@ -35,8 +35,10 @@ void init_pulp_data(dist_graph_t* g, pulp_data_t* pulp, int32_t num_parts) {
   if (debug) printf("Task %d init_pulp_data() start\n", procid);
 
   pulp->num_parts = num_parts;
-  if (g->edge_weights == NULL && g->vertex_weights == NULL)
+  if (g->edge_weights == NULL && g->vertex_weights == NULL) {
+    // always this branch
     pulp->avg_size = (double)g->n / (double)pulp->num_parts;
+  }
   else
     pulp->avg_size = (double)g->vertex_weights_sum / (double)pulp->num_parts;
   pulp->avg_edge_size = (double)g->m * 2 / (double)pulp->num_parts;

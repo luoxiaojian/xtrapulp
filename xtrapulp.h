@@ -12,16 +12,16 @@ struct queue_data_t;
 struct fast_map;
 
 typedef struct {
-  double vert_balance;
-  double edge_balance;
+  double vert_balance;    // default: 1.1
+  double edge_balance;    // default: 1.1
 
-  bool do_lp_init;
-  bool do_bfs_init;
-  bool do_repart;
-  bool do_edge_balance;
-  bool do_maxcut_balance;
+  bool do_lp_init;        // default: false
+  bool do_bfs_init;       // default: true
+  bool do_repart;         // default: false
+  bool do_edge_balance;   // default: false
+  bool do_maxcut_balance; // default: false
 
-  bool verbose_output;
+  bool verbose_output;    // default: false
 
   int pulp_seed;
 } pulp_part_control_t;
