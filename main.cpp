@@ -174,21 +174,25 @@ int main(int argc, char** argv) {
   mpi_data_t comm;
   init_comm_data(&comm);
   if (gen_rand) {
+    // gen_rand always false
     std::stringstream ss;
     ss << "rand-" << gen_n << "-" << gen_m_per_n;
     strcat(graphname, ss.str().c_str());
     generate_rand_out_edges(&ggi, gen_n, gen_m_per_n, offset_vids);
   } else if (gen_rmat) {
+    // gen_rmat always false
     std::stringstream ss;
     ss << "rmat-" << gen_n << "-" << gen_m_per_n;
     strcat(graphname, ss.str().c_str());
     generate_rmat_out_edges(&ggi, gen_n, gen_m_per_n, offset_vids);
   } else if (gen_hd) {
+    // gen_hd always false
     std::stringstream ss;
     ss << "hd-" << gen_n << "-" << gen_m_per_n;
     strcat(graphname, ss.str().c_str());
     generate_hd_out_edges(&ggi, gen_n, gen_m_per_n, offset_vids);
   } else {
+    // always this branch
     if (procid == 0) printf("Reading in graphfile %s\n", input_filename);
     double elt = omp_get_wtime();
     strcat(graphname, input_filename);
@@ -213,6 +217,7 @@ int main(int argc, char** argv) {
 
   double total_elt = 0.0;
   for (uint32_t i = 0; i < num_runs; ++i) {
+    // default: 1 round
     double elt = 0.0;
     if (parts_in[0] != '\0') {
       if (procid == 0) printf("Reading in parts file %s\n", parts_in);

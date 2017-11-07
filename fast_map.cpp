@@ -11,6 +11,7 @@ extern int procid, nprocs;
 extern bool verbose, debug, verify;
 
 void init_map(fast_map* map, uint64_t init_size) {
+  // init_size = (m_local + n_local) * 2
   if (debug) {
     printf("Task %d init_map() start\n", procid);
   }

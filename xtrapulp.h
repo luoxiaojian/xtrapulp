@@ -27,29 +27,30 @@ typedef struct {
 } pulp_part_control_t;
 
 struct dist_graph_t {
-  uint64_t n;
-  uint64_t m;
-  uint64_t m_local;
+  uint64_t n;           // global vertex number, max vertex id + 1
+  uint64_t m;           // global edge number 
+  uint64_t m_local;     // local edge number, after exchanged
 
-  uint64_t n_local;
-  uint64_t n_offset;
-  uint64_t n_ghost;
-  uint64_t n_total;
+  uint64_t n_local;     // n / nprocs + 1 of n - n_offset
+  uint64_t n_offset;    // procid * (n / nprocs + 1)
+  uint64_t n_ghost;     // my outer vertices number
+  uint64_t n_total;     // my total vertices number
 
   uint64_t max_degree_vert;
   uint64_t max_degree;
 
-  uint64_t* out_edges;
-  uint64_t* out_degree_list;
+  uint64_t* out_edges;          // same as mine
+  uint64_t* out_degree_list;    // offsets of out edges of each vertex
   uint64_t* ghost_degrees;
 
   int32_t* vertex_weights;
   int32_t* edge_weights;
   uint64_t vertex_weights_sum;
 
-  uint64_t* local_unmap;
-  uint64_t* ghost_unmap;
-  uint64_t* ghost_tasks;
+  uint64_t* local_unmap;        // [0:n_local-1], local_unmap[i] = i + n_offset
+                                // inner vertices: local id -> global id
+  uint64_t* ghost_unmap;        // outer vertices: local id -> global id
+  uint64_t* ghost_tasks;        // outer vertices: local id -> frag id
   fast_map* map;
 };
 #define out_degree(g, n) (g->out_degree_list[n + 1] - g->out_degree_list[n])
