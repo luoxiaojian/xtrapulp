@@ -3,42 +3,42 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
-BAL_CHANGE	pulp_v.cpp	/^#define BAL_CHANGE /;"	d	file:
-BAL_CHANGE	pulp_ve.cpp	/^#define BAL_CHANGE /;"	d	file:
-BAL_CHANGE	pulp_vec.cpp	/^#define BAL_CHANGE /;"	d	file:
-BAL_CUTOFF	pulp_v.cpp	/^#define BAL_CUTOFF /;"	d	file:
-BAL_CUTOFF	pulp_ve.cpp	/^#define BAL_CUTOFF /;"	d	file:
-BAL_CUTOFF	pulp_vec.cpp	/^#define BAL_CUTOFF /;"	d	file:
-CUT_CHANGE	pulp_v.cpp	/^#define CUT_CHANGE /;"	d	file:
-CUT_CHANGE	pulp_ve.cpp	/^#define CUT_CHANGE /;"	d	file:
-CUT_CHANGE	pulp_vec.cpp	/^#define CUT_CHANGE /;"	d	file:
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BAL_CHANGE	pulp_v.cpp	18;"	d	file:
+BAL_CHANGE	pulp_ve.cpp	17;"	d	file:
+BAL_CHANGE	pulp_vec.cpp	17;"	d	file:
+BAL_CUTOFF	pulp_v.cpp	19;"	d	file:
+BAL_CUTOFF	pulp_ve.cpp	18;"	d	file:
+BAL_CUTOFF	pulp_vec.cpp	18;"	d	file:
+CUT_CHANGE	pulp_v.cpp	17;"	d	file:
+CUT_CHANGE	pulp_ve.cpp	16;"	d	file:
+CUT_CHANGE	pulp_vec.cpp	16;"	d	file:
 CXXFLAGS	Makefile	/^CXXFLAGS = -fopenmp -O3 -Wall$/;"	m
 FORLIBPULP	Makefile	/^FORLIBPULP = util.o generate.o pulp_util.o pulp_data.o fast_map.o dist_graph.o comms.o io_pp.o pulp_init.o pulp_vec.o pulp_ve.o pulp_v.o xtrapulp.o$/;"	m
 LIBTARGET	Makefile	/^LIBTARGET = libxtrapulp.a$/;"	m
 LINKFLAGS	Makefile	/^LINKFLAGS = -fopenmp -O3 -Wall$/;"	m
-MAX_SEND_SIZE	comms.h	/^#define MAX_SEND_SIZE /;"	d
-MIN_SIZE	pulp_init.cpp	/^#define MIN_SIZE /;"	d	file:
+MAX_SEND_SIZE	comms.h	17;"	d
+MIN_SIZE	pulp_init.cpp	598;"	d	file:
 MPICXX	Makefile	/^MPICXX = mpicxx$/;"	m
-NULL_KEY	fast_map.h	/^#define NULL_KEY /;"	d
+NULL_KEY	fast_map.h	12;"	d
 TARGET	Makefile	/^TARGET = xtrapulp$/;"	m
-THREAD_QUEUE_SIZE	comms.h	/^#define THREAD_QUEUE_SIZE /;"	d
+THREAD_QUEUE_SIZE	comms.h	18;"	d
 TOCOMPILE	Makefile	/^TOCOMPILE = util.o generate.o pulp_util.o pulp_data.o fast_map.o dist_graph.o comms.o io_pp.o main.o$/;"	m
 X	xtrapulp.cpp	/^float X, Y;$/;"	v
 Y	xtrapulp.cpp	/^float X, Y;$/;"	v
-_COMMS_H_	comms.h	/^#define _COMMS_H_$/;"	d
-_DIST_GRAPH_H_	dist_graph.h	/^#define _DIST_GRAPH_H_$/;"	d
-_FAST_MAP_H_	fast_map.h	/^#define _FAST_MAP_H_$/;"	d
-_GENERATE_H_	generate.h	/^#define _GENERATE_H_$/;"	d
-_IO_PP_H_	io_pp.h	/^#define _IO_PP_H_$/;"	d
-_PULP_DATA_H	pulp_data.h	/^#define _PULP_DATA_H$/;"	d
-_PULP_INIT_H_	pulp_init.h	/^#define _PULP_INIT_H_$/;"	d
-_PULP_UTIL_H_	pulp_util.h	/^#define _PULP_UTIL_H_$/;"	d
-_PULP_VEC_H_	pulp_vec.h	/^#define _PULP_VEC_H_$/;"	d
-_PULP_VE_H_	pulp_ve.h	/^#define _PULP_VE_H_$/;"	d
-_PULP_V_H_	pulp_v.h	/^#define _PULP_V_H_$/;"	d
-_UTIL_H_	util.h	/^#define _UTIL_H_$/;"	d
-__XTRAPULP_H__	xtrapulp.h	/^#define __XTRAPULP_H__$/;"	d
+_COMMS_H_	comms.h	2;"	d
+_DIST_GRAPH_H_	dist_graph.h	2;"	d
+_FAST_MAP_H_	fast_map.h	2;"	d
+_GENERATE_H_	generate.h	2;"	d
+_IO_PP_H_	io_pp.h	2;"	d
+_PULP_DATA_H	pulp_data.h	2;"	d
+_PULP_INIT_H_	pulp_init.h	2;"	d
+_PULP_UTIL_H_	pulp_util.h	2;"	d
+_PULP_VEC_H_	pulp_vec.h	2;"	d
+_PULP_VE_H_	pulp_ve.h	2;"	d
+_PULP_V_H_	pulp_v.h	2;"	d
+_UTIL_H_	util.h	2;"	d
+__XTRAPULP_H__	xtrapulp.h	2;"	d
 add_vid_data_to_send	comms.h	/^inline void add_vid_data_to_send(thread_comm_t* tc, mpi_data_t* comm,$/;"	f
 add_vid_to_queue	comms.h	/^inline void add_vid_to_queue(thread_queue_t* tq, queue_data_t* q,$/;"	f
 add_vid_to_send	comms.h	/^inline void add_vid_to_send(thread_queue_t* tq, queue_data_t* q,$/;"	f
@@ -57,11 +57,8 @@ clear_thread_comm	comms.cpp	/^void clear_thread_comm(thread_comm_t* tc) {$/;"	f
 clear_thread_pulp	pulp_data.cpp	/^void clear_thread_pulp(thread_pulp_t* tp) {$/;"	f
 clear_thread_queue	comms.cpp	/^void clear_thread_queue(thread_queue_t* tq) {$/;"	f
 clear_thread_queue_comm_data	comms.cpp	/^void clear_thread_queue_comm_data(mpi_data_t* comm) {$/;"	f
-create_graph	dist_graph.cpp	/^int create_graph(dist_graph_t* g, uint64_t n_global, uint64_t m_global,$/;"	f
 create_graph	dist_graph.cpp	/^int create_graph(graph_gen_data_t* ggi, dist_graph_t* g) {$/;"	f
-create_graph_serial	dist_graph.cpp	/^int create_graph_serial(dist_graph_t* g, uint64_t n_global, uint64_t m_global,$/;"	f
 create_graph_serial	dist_graph.cpp	/^int create_graph_serial(graph_gen_data_t* ggi, dist_graph_t* g) {$/;"	f
-create_xtrapulp_dist_graph	xtrapulp.cpp	/^extern "C" int create_xtrapulp_dist_graph($/;"	f
 cut_size	pulp_data.h	/^  int64_t cut_size;$/;"	m	struct:pulp_data_t
 cut_size_change	pulp_data.h	/^  int64_t cut_size_change;$/;"	m	struct:pulp_data_t
 debug	xtrapulp.cpp	/^bool verbose, debug, verify;$/;"	v
@@ -81,19 +78,18 @@ exchange_edges	io_pp.cpp	/^int exchange_edges(graph_gen_data_t* ggi, mpi_data_t*
 exchange_vert_data	comms.h	/^inline void exchange_vert_data(dist_graph_t* g, mpi_data_t* comm,$/;"	f
 exchange_verts	comms.h	/^inline void exchange_verts(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q) {$/;"	f
 fast_map	fast_map.h	/^struct fast_map {$/;"	s
-gen_edges	dist_graph.h	/^  uint64_t* gen_edges;$/;"	m	struct:graph_gen_data_t
+gen_edges	dist_graph.h	/^  uint64_t* gen_edges;    \/\/ edges read, gen_edges[0:2*m_local_read-1],$/;"	m	struct:graph_gen_data_t
 generate_hd_out_edges	generate.cpp	/^int generate_hd_out_edges(graph_gen_data_t* ggi, uint64_t num_verts,$/;"	f
 generate_rand_out_edges	generate.cpp	/^int generate_rand_out_edges(graph_gen_data_t* ggi, uint64_t num_verts,$/;"	f
 generate_rmat_out_edges	generate.cpp	/^int generate_rmat_out_edges(graph_gen_data_t* ggi, uint64_t num_verts,$/;"	f
-get_ghost_degrees	dist_graph.cpp	/^int get_ghost_degrees(dist_graph_t* g) {$/;"	f
 get_ghost_degrees	dist_graph.cpp	/^int get_ghost_degrees(dist_graph_t* g, mpi_data_t* comm, queue_data_t* q) {$/;"	f
 get_ghost_tasks	repart.cpp	/^int get_ghost_tasks(dist_graph_t* g) {$/;"	f
 get_max_degree_vert	dist_graph.cpp	/^int get_max_degree_vert(dist_graph_t* g) {$/;"	f
 get_max_key	fast_map.h	/^inline uint64_t get_max_key(fast_map* map) {$/;"	f
 get_value	fast_map.h	/^inline uint64_t get_value(fast_map* map, uint64_t key) {$/;"	f
 ghost_degrees	xtrapulp.h	/^  uint64_t* ghost_degrees;$/;"	m	struct:dist_graph_t
-ghost_tasks	xtrapulp.h	/^  uint64_t* ghost_tasks;$/;"	m	struct:dist_graph_t
-ghost_unmap	xtrapulp.h	/^  uint64_t* ghost_unmap;$/;"	m	struct:dist_graph_t
+ghost_tasks	xtrapulp.h	/^  uint64_t* ghost_tasks;        \/\/ outer vertices: local id -> frag id$/;"	m	struct:dist_graph_t
+ghost_unmap	xtrapulp.h	/^  uint64_t* ghost_unmap;        \/\/ outer vertices: local id -> global id$/;"	m	struct:dist_graph_t
 global_queue_size	comms.h	/^  uint64_t global_queue_size;$/;"	m	struct:mpi_data_t
 graph_gen_data_t	dist_graph.h	/^struct graph_gen_data_t {$/;"	s
 hashing	fast_map.h	/^  bool hashing;$/;"	m	struct:fast_map
@@ -110,12 +106,12 @@ init_thread_queue	comms.cpp	/^void init_thread_queue(thread_queue_t* tq) {$/;"	f
 load_graph_edges_32	io_pp.cpp	/^int load_graph_edges_32(char* input_filename, graph_gen_data_t* ggi,$/;"	f
 load_graph_edges_64	io_pp.cpp	/^int load_graph_edges_64(char* input_filename, graph_gen_data_t* ggi,$/;"	f
 local_parts	pulp_data.h	/^  int32_t* local_parts;$/;"	m	struct:pulp_data_t
-local_unmap	xtrapulp.h	/^  uint64_t* local_unmap;$/;"	m	struct:dist_graph_t
-m	dist_graph.h	/^  uint64_t m;$/;"	m	struct:graph_gen_data_t
-m	xtrapulp.h	/^  uint64_t m;$/;"	m	struct:dist_graph_t
-m_local	xtrapulp.h	/^  uint64_t m_local;$/;"	m	struct:dist_graph_t
-m_local_edges	dist_graph.h	/^  uint64_t m_local_edges;$/;"	m	struct:graph_gen_data_t
-m_local_read	dist_graph.h	/^  uint64_t m_local_read;$/;"	m	struct:graph_gen_data_t
+local_unmap	xtrapulp.h	/^  uint64_t* local_unmap;        \/\/ [0:n_local-1], local_unmap[i] = i + n_offset$/;"	m	struct:dist_graph_t
+m	dist_graph.h	/^  uint64_t m;             \/\/ global edge number$/;"	m	struct:graph_gen_data_t
+m	xtrapulp.h	/^  uint64_t m;           \/\/ global edge number $/;"	m	struct:dist_graph_t
+m_local	xtrapulp.h	/^  uint64_t m_local;     \/\/ local edge number, after exchanged$/;"	m	struct:dist_graph_t
+m_local_edges	dist_graph.h	/^  uint64_t m_local_edges; \/\/ after exchange, local edge number$/;"	m	struct:graph_gen_data_t
+m_local_read	dist_graph.h	/^  uint64_t m_local_read;  \/\/ local read edge number$/;"	m	struct:graph_gen_data_t
 main	main.cpp	/^int main(int argc, char** argv) {$/;"	f
 map	xtrapulp.h	/^  fast_map* map;$/;"	m	struct:dist_graph_t
 max_c	pulp_data.h	/^  double max_c;$/;"	m	struct:pulp_data_t
@@ -126,23 +122,23 @@ max_e	pulp_data.h	/^  double max_e;$/;"	m	struct:pulp_data_t
 max_v	pulp_data.h	/^  double max_v;$/;"	m	struct:pulp_data_t
 mpi_data_t	comms.h	/^struct mpi_data_t {$/;"	s
 mult_hash	fast_map.h	/^inline uint64_t mult_hash(fast_map* map, uint64_t key) {$/;"	f
-n	dist_graph.h	/^  uint64_t n;$/;"	m	struct:graph_gen_data_t
-n	xtrapulp.h	/^  uint64_t n;$/;"	m	struct:dist_graph_t
-n_ghost	xtrapulp.h	/^  uint64_t n_ghost;$/;"	m	struct:dist_graph_t
-n_local	dist_graph.h	/^  uint64_t n_local;$/;"	m	struct:graph_gen_data_t
-n_local	xtrapulp.h	/^  uint64_t n_local;$/;"	m	struct:dist_graph_t
-n_offset	dist_graph.h	/^  uint64_t n_offset;$/;"	m	struct:graph_gen_data_t
-n_offset	xtrapulp.h	/^  uint64_t n_offset;$/;"	m	struct:dist_graph_t
-n_total	xtrapulp.h	/^  uint64_t n_total;$/;"	m	struct:dist_graph_t
+n	dist_graph.h	/^  uint64_t n;             \/\/ global vertex number, max vertex id + 1$/;"	m	struct:graph_gen_data_t
+n	xtrapulp.h	/^  uint64_t n;           \/\/ global vertex number, max vertex id + 1$/;"	m	struct:dist_graph_t
+n_ghost	xtrapulp.h	/^  uint64_t n_ghost;     \/\/ my outer vertices number$/;"	m	struct:dist_graph_t
+n_local	dist_graph.h	/^  uint64_t n_local;       \/\/ n_local = (n \/ nprocs + 1) or (n - n_offset)$/;"	m	struct:graph_gen_data_t
+n_local	xtrapulp.h	/^  uint64_t n_local;     \/\/ n \/ nprocs + 1 of n - n_offset$/;"	m	struct:dist_graph_t
+n_offset	dist_graph.h	/^  uint64_t n_offset;      \/\/ n_offset = procid * (n \/ nprocs + 1)$/;"	m	struct:graph_gen_data_t
+n_offset	xtrapulp.h	/^  uint64_t n_offset;    \/\/ procid * (n \/ nprocs + 1)$/;"	m	struct:dist_graph_t
+n_total	xtrapulp.h	/^  uint64_t n_total;     \/\/ my total vertices number$/;"	m	struct:dist_graph_t
 next_size	comms.h	/^  uint64_t next_size;$/;"	m	struct:queue_data_t
 nprocs	xtrapulp.cpp	/^int procid, nprocs;$/;"	v
 num_parts	pulp_data.h	/^  int32_t num_parts;$/;"	m	struct:pulp_data_t
 num_unique	fast_map.h	/^  uint64_t num_unique;$/;"	m	struct:fast_map
-out_degree	xtrapulp.h	/^#define out_degree(/;"	d
-out_degree_list	xtrapulp.h	/^  uint64_t* out_degree_list;$/;"	m	struct:dist_graph_t
-out_edges	xtrapulp.h	/^  uint64_t* out_edges;$/;"	m	struct:dist_graph_t
-out_vertices	xtrapulp.h	/^#define out_vertices(/;"	d
-out_weights	xtrapulp.h	/^#define out_weights(/;"	d
+out_degree	xtrapulp.h	56;"	d
+out_degree_list	xtrapulp.h	/^  uint64_t* out_degree_list;    \/\/ offsets of out edges of each vertex$/;"	m	struct:dist_graph_t
+out_edges	xtrapulp.h	/^  uint64_t* out_edges;          \/\/ same as mine$/;"	m	struct:dist_graph_t
+out_vertices	xtrapulp.h	57;"	d
+out_weights	xtrapulp.h	58;"	d
 output_parts	pulp_util.cpp	/^int output_parts(const char* filename, dist_graph_t* g, int32_t* parts) {$/;"	f
 output_parts	pulp_util.cpp	/^int output_parts(const char* filename, dist_graph_t* g, int32_t* parts,$/;"	f
 p	util.h	/^  int64_t p;$/;"	m	struct:xs1024star_t

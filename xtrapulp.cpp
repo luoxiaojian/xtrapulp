@@ -180,29 +180,3 @@ extern "C" int xtrapulp(dist_graph_t* g, pulp_part_control_t* ppc,
 
   return 0;
 }
-
-extern "C" int create_xtrapulp_dist_graph(
-    dist_graph_t* g, unsigned long n_global, unsigned long m_global,
-    unsigned long n_local, unsigned long m_local, unsigned long* local_adjs,
-    unsigned long* local_offsets, unsigned long* global_ids,
-    unsigned long* vert_dist, int* vertex_weights, int* edge_weights) {
-  MPI_Comm_rank(MPI_COMM_WORLD, &procid);
-  MPI_Comm_size(MPI_COMM_WORLD, &nprocs);
-  if (nprocs > 1) {
-    create_graph(g, (uint64_t)n_global, (uint64_t)m_global, (uint64_t)n_local,
-                 (uint64_t)m_local, (uint64_t*)local_offsets,
-                 (uint64_t*)local_adjs, (uint64_t*)global_ids,
-                 (int32_t*)vertex_weights, (int32_t*)edge_weights);
-    relabel_edges(g, vert_dist);
-  } else {
-    create_graph_serial(g, (uint64_t)n_global, (uint64_t)m_global,
-                        (uint64_t)n_local, (uint64_t)m_local,
-                        (uint64_t*)local_offsets, (uint64_t*)local_adjs,
-                        (int32_t*)vertex_weights, (int32_t*)edge_weights);
-  }
-
-  get_ghost_degrees(g);
-  // get_ghost_weights(g);
-
-  return 0;
-}
